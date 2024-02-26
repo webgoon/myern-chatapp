@@ -1,3 +1,5 @@
+##  Note: last field doesn't get a commma
+
 
 ###
 
@@ -5,6 +7,19 @@ GET http://localhost:4000/test
 
 ###
 
+
+POST http://localhost:4000/register
+Content-Type: application/json
+
+{   
+    "firstName": "TestFirsName",
+    "lastName": "TestLastName",
+    "email": "testemail@email.com",
+    "hashedPassword": "1234567890"
+}
+
+
+###
 
 POST http://localhost:4000/admins/adminscreate
 Content-Type: application/json
